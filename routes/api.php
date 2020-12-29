@@ -12,7 +12,9 @@
 |
 */
 
-
+Route::get('test', function () {
+    return response()->json(['key' => 'value']);
+});
 Route::post('login', 'AuthController@login');
 Route::post('register', 'AuthController@register');
 Route::post('logout', 'AuthController@logout');
